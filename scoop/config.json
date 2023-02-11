@@ -1,0 +1,7 @@
+{
+  "last_update": "2023-02-11T17:54:44.4549977+07:00",
+  "use_external_7zip": true,
+  "use_lessmsi": true,
+  "scoop_branch": "master",
+  "scoop_repo": "https://github.com/ScoopInstaller/Scoop"
+}

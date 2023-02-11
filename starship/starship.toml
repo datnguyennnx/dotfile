@@ -1,0 +1,89 @@
+# ~/.config/starship.toml
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Change the default prompt format
+format = """\
+[╭╴](238)$env_var\
+$all[╰─](238)$character"""
+
+# Change the default prompt characters
+[character]
+success_symbol = "[](238)"
+error_symbol = "[](238)"
+
+# Shows an icon that should be included by zshrc script based on the distribution or os
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value](bold white)'  # removed space between distro and rest for pwsh
+variable = "STARSHIP_DISTRO"
+disabled = false
+
+# Shows the username
+[username]
+style_user = 'green bold'
+style_root = 'black bold'
+format = '[datnguyennnx]($style) '
+disabled = false
+show_always = true
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = " ~"
+read_only_style = "197"
+read_only = "🚀 "
+format = "at [$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = '🌱 '
+truncation_length = 4
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[docker_context]
+format = "via [ $context](bold blue) "
+
+[python]
+symbol = '👾 Python '
+python_binary = "python3"
+
+[nodejs]
+format = 'via [🤖 Nodejs $version](bold green) '
+
+[c]
+format = 'via [C lang $version]($style)'
+
+[golang]
+format = 'via [🏎💨 Go $version](bold cyan) '
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%T'
+time_range = '00:00:00-24:00:00'
+
+[kubernetes]
+format = 'on [ $context\($namespace\)](bold purple) '
+disabled = false
+
+[kubernetes.context_aliases]
+"clcreative-k8s-staging" = "cl-k8s-staging"
+"clcreative-k8s-production" = "cl-k8s-prod"
