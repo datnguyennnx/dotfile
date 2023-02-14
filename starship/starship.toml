@@ -39,7 +39,6 @@ format = "at [$path]($style)[$read_only]($read_only_style) "
 symbol = '🌱 '
 truncation_length = 4
 truncation_symbol = ''
-ignore_branches = ['master', 'main']
 
 [git_commit]
 commit_hash_length = 4
@@ -62,17 +61,16 @@ deleted = '🗑'
 format = "via [ $context](bold blue) "
 
 [python]
-symbol = '👾 Python '
-python_binary = "python3"
+format = 'via [👾 Python $version](bold green) '
 
 [nodejs]
 format = 'via [🤖 Nodejs $version](bold green) '
 
 [c]
-format = 'via [C lang $version]($style)'
+format = 'via [📝 C lang $version]($style)'
 
 [golang]
-format = 'via [🏎💨 Go $version](bold cyan) '
+format = 'via [💨 Go $version](bold cyan) '
 
 [time]
 disabled = false
