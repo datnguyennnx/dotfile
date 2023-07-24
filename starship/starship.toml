@@ -1,4 +1,4 @@
-# ~/.config/starship.toml
+# ~/.config/starship/starship.toml
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -10,8 +10,8 @@ $all[╰─](238)$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+success_symbol = "[🟢](238)"
+error_symbol = "[🔴](238)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
@@ -30,7 +30,7 @@ show_always = true
 [directory]
 truncation_length = 3
 truncation_symbol = "…/"
-home_symbol = " ~"
+home_symbol = "🚀 ~"
 read_only_style = "197"
 read_only = "🚀 "
 format = "at [$path]($style)[$read_only]($read_only_style) "
