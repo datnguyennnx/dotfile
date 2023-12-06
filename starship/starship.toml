@@ -57,8 +57,6 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
 
-[docker_context]
-format = "via [ $context](bold blue) "
 
 [python]
 format = 'via [👾 Python $version](bold green) '
@@ -78,10 +76,4 @@ format = '🕙[\[ $time \]]($style) '
 time_format = '%T'
 time_range = '00:00:00-24:00:00'
 
-[kubernetes]
-format = 'on [ $context\($namespace\)](bold purple) '
-disabled = false
 
-[kubernetes.context_aliases]
-"clcreative-k8s-staging" = "cl-k8s-staging"
-"clcreative-k8s-production" = "cl-k8s-prod"
