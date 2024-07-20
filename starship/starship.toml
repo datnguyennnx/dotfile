@@ -37,7 +37,7 @@ format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = '🌱 '
-truncation_length = 4
+truncation_length = 50
 truncation_symbol = ''
 
 [git_commit]
@@ -72,7 +72,7 @@ format = 'via [💨 Go $version](bold cyan) '
 
 [time]
 disabled = false
-format = '🕙[\[ $time \]]($style) '
+format = '🕙 [\[ $time \]]($style) '
 time_format = '%T'
 time_range = '00:00:00-24:00:00'
 
